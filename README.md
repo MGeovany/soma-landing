@@ -24,14 +24,14 @@ values in `tailwind.config.js`.
 ## Develop
 
 ```bash
-npm install
-npm run dev      # http://localhost:3000
+pnpm install
+pnpm dev         # http://localhost:3000
 ```
 
 ## Build (static)
 
 ```bash
-npm run build    # outputs a static site to ./out
+pnpm build       # outputs a static site to ./out
 ```
 
 Deploy `./out` to GitHub Pages, Vercel, Netlify, or any static host.
