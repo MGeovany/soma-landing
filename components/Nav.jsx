@@ -24,7 +24,11 @@ export default function Nav() {
             </Link>
           ))}
         </div>
-        <Button href="/#download">Get Soma</Button>
+        <Button href="/#download" className="btn-store">
+          <img src="/icon.png" alt="" aria-hidden="true" className="h-5 w-5 rounded-[5px]" />
+          <span>Get Soma</span>
+          <span className="text-sm text-white/80">↗</span>
+        </Button>
       </nav>
     </header>
   );
