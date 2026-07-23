@@ -104,24 +104,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Privacy teaser */}
-      <section className="py-16">
-        <GlassCard hero className="p-8 text-center md:p-12">
-          <div className="stat-label mb-3">Privacy</div>
-          <h2 className="mx-auto max-w-2xl text-3xl font-bold tracking-tight text-textPrimary">
-            Your remote talks to your TV. That's it.
-          </h2>
-          <p className="mx-auto mt-4 max-w-xl text-textMuted">
-            Soma communicates directly with your TV on your local network. It has no servers,
-            collects no personal data, and requires no account.
-          </p>
-          <div className="mt-7 flex justify-center gap-3">
-            <Button href="/privacy" variant="ghost">
-              Read the Privacy Policy
-            </Button>
-          </div>
-        </GlassCard>
-      </section>
     </>
   );
 }
