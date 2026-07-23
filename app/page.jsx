@@ -37,7 +37,6 @@ export default function Home() {
             height="88"
             className="mb-6 rounded-[22px] border border-white/10 shadow-[0_16px_50px_rgba(46,155,255,0.24)]"
           />
-          <span className="chip chip--accent mb-5">Mac & iPhone</span>
           <h1 className="text-4xl font-bold leading-[1.1] tracking-tight text-textPrimary md:text-6xl">
             Your Samsung TV remote,{" "}
             <span style={{ color: "var(--accent-bright)" }}>reimagined.</span>
