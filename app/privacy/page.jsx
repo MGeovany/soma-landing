@@ -46,8 +46,8 @@ export default function Privacy() {
 
           <Section title="Information stored on your device">
             <p>
-              To function, Soma saves the TVs you configure — their name, IP address, MAC address,
-              chosen transport, and the authorization token issued by the TV — on your device using
+              To function, Soma saves the TVs you configure: their name, IP address, MAC address,
+              chosen transport, and the authorization token issued by the TV on your device using
               the operating system's standard local storage. This data never leaves your device
               except to communicate with your TV on your own network.
             </p>

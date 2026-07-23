@@ -4,7 +4,7 @@ import GlassCard from "@/components/GlassCard";
 import RemoteMock from "@/components/RemoteMock";
 
 const features = [
-  { icon: "🧭", title: "Full navigation", text: "D-pad and OK, Home, Back, Menu and Exit — everything your physical remote does." },
+  { icon: "🧭", title: "Full navigation", text: "D-pad and OK, Home, Back, Menu and Exit: everything your physical remote does." },
   { icon: "🔊", title: "Volume & channels", text: "Volume, mute, channel up/down, the channel list and direct number entry." },
   { icon: "🎬", title: "Media & apps", text: "Play/pause, skip and seek, plus one-tap launch for YouTube, Netflix, Prime Video and more." },
   { icon: "🔌", title: "Sources", text: "Jump to HDMI 1–3, TV or the source menu without hunting for the button." },
@@ -30,13 +30,20 @@ export default function Home() {
       {/* Hero */}
       <section className="grid items-center gap-12 py-16 md:grid-cols-2 md:py-24">
         <div>
+          <img
+            src="/icon.png"
+            alt="Soma app icon"
+            width="88"
+            height="88"
+            className="mb-6 rounded-[22px] border border-white/10 shadow-[0_16px_50px_rgba(46,155,255,0.24)]"
+          />
           <span className="chip chip--accent mb-5">Mac & iPhone</span>
           <h1 className="text-4xl font-bold leading-[1.1] tracking-tight text-textPrimary md:text-6xl">
             Your Samsung TV remote,{" "}
             <span style={{ color: "var(--accent-bright)" }}>reimagined.</span>
           </h1>
           <p className="mt-5 max-w-md text-lg text-textMuted">
-            Soma controls your Samsung Smart TV from your Mac menu bar and your iPhone — over your
+            Soma controls your Samsung Smart TV from your Mac menu bar and your iPhone over your
             home network, privately, with no cloud and no account.
           </p>
           <div id="download" className="mt-8 flex flex-wrap items-center gap-3">
@@ -60,7 +67,7 @@ export default function Home() {
       <section id="features" className="py-16">
         <SectionTitle
           kicker="What it does"
-          title="Everything the remote does — and a bit more"
+          title="Everything the remote does, and a bit more"
           subtitle="Built with native Apple frameworks. Fast, focused, and quietly powerful."
         />
         <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">

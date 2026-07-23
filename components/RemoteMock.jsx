@@ -20,7 +20,7 @@ function Key({ children, accent = false, wide = false }) {
   );
 }
 
-/** A stylized mock of the Soma remote — pure CSS, no screenshots needed. */
+/** A stylized mock of the Soma remote: pure CSS, no screenshots needed. */
 export default function RemoteMock() {
   return (
     <GlassCard hero className="mx-auto w-full max-w-[300px] p-5">

@@ -10,7 +10,7 @@ module.exports = {
         textPrimary: "#F5F5F5",
         textMuted: "#999999",
         textSubtle: "#666666",
-        // Accent — Samsung blue (in place of the spec's orange).
+        // Accent: Samsung blue (in place of the spec's orange).
         accent: "#1428A0",
         accentBright: "#2E9BFF",
         accentHover: "#3FA9FF",
