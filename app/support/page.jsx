@@ -7,7 +7,7 @@ export const metadata = {
   description: "Get started with Soma, check requirements, and find answers to common questions.",
 };
 
-const SUPPORT_EMAIL = "marlon@savvly.com";
+const SUPPORT_EMAIL = "marlon.castro@thefndrs.com";
 
 const steps = [
   { n: "01", title: "Open Soma", text: "Launch the app on your Mac or iPhone. On Mac it appears in the menu bar." },

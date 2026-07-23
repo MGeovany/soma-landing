@@ -6,7 +6,7 @@ export const metadata = {
   description: "How Soma handles your data: it doesn't. No accounts, no cloud, no tracking.",
 };
 
-const EMAIL = "marlon@savvly.com";
+const EMAIL = "marlon.castro@thefndrs.com";
 const UPDATED = "July 23, 2026";
 
 function Section({ title, children }) {

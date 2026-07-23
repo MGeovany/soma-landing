@@ -6,7 +6,7 @@ export const metadata = {
   description: "The terms that govern your use of the Soma app.",
 };
 
-const EMAIL = "marlon@savvly.com";
+const EMAIL = "marlon.castro@thefndrs.com";
 const UPDATED = "July 23, 2026";
 
 function Section({ title, children }) {

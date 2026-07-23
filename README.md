@@ -38,7 +38,7 @@ Deploy `./out` to GitHub Pages, Vercel, Netlify, or any static host.
 
 ## Notes
 
-- The support/contact email is `marlon@savvly.com` — change it in
+- The support/contact email is `marlon.castro@thefndrs.com` — change it in
   `app/support/page.jsx`, `app/privacy/page.jsx` and `app/terms/page.jsx`.
 - The App Store button is a "coming soon" placeholder until the app ships;
   swap it for the real App Store link and badge on launch.
