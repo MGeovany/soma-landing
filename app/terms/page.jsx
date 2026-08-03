@@ -1,5 +1,5 @@
 import PageHeader from "@/components/PageHeader";
-import GlassCard from "@/components/GlassCard";
+import NeuCard from "@/components/NeuCard";
 
 export const metadata = {
   title: "Terms of Use",
@@ -24,7 +24,7 @@ export default function Terms() {
       <PageHeader kicker="Legal" title="Terms of Use" />
 
       <section className="mx-auto max-w-3xl py-14">
-        <GlassCard className="p-7 md:p-10">
+        <NeuCard className="p-7 md:p-10">
           <p className="mono mb-8 text-xs text-textSubtle">Last updated: {UPDATED}</p>
 
           <Section title="Acceptance">
@@ -45,11 +45,11 @@ export default function Terms() {
             </p>
           </Section>
 
-          <Section title="No affiliation with Samsung">
+          <Section title="No affiliation with Samsung or LG">
             <p>
               Soma is an independent application. It is not affiliated with, endorsed by, or
-              sponsored by Samsung. “Samsung” and related marks are the property of their respective
-              owners. Compatibility depends on your TV model and firmware.
+              sponsored by Samsung or LG. “Samsung”, “LG”, and related marks are the property of
+              their respective owners. Compatibility depends on your TV model and firmware.
             </p>
           </Section>
 
@@ -81,7 +81,7 @@ export default function Terms() {
               .
             </p>
           </Section>
-        </GlassCard>
+        </NeuCard>
       </section>
     </>
   );

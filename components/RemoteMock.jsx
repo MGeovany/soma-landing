@@ -1,20 +1,10 @@
-import GlassCard from "./GlassCard";
+import NeuCard from "./NeuCard";
 
 function Key({ children, accent = false, className = "" }) {
   return (
     <div
-      className={`grid place-items-center rounded-[18px] text-lg font-semibold ${className}`}
-      style={{
-        height: "clamp(64px, 9vw, 88px)",
-        color: accent ? "#fff" : "var(--text-primary)",
-        background: accent
-          ? "linear-gradient(135deg, var(--accent-bright), var(--accent))"
-          : "linear-gradient(180deg, rgba(255,255,255,0.075), rgba(255,255,255,0.035))",
-        border: accent ? "1px solid rgba(46,155,255,0.42)" : "1px solid rgba(255,255,255,0.10)",
-        boxShadow: accent
-          ? "0 12px 28px rgba(46,155,255,0.26), inset 0 1px 0 rgba(255,255,255,0.18)"
-          : "inset 0 1px 0 rgba(255,255,255,0.08)",
-      }}
+      className={`neu-key text-lg font-semibold ${accent ? "neu-key--accent" : ""} ${className}`}
+      style={{ height: "clamp(60px, 8.5vw, 82px)" }}
     >
       {children}
     </div>
@@ -24,40 +14,53 @@ function Key({ children, accent = false, className = "" }) {
 /** A stylized mock of the Soma remote: pure CSS, no screenshots needed. */
 export default function RemoteMock() {
   return (
-    <GlassCard hero className="mx-auto w-full max-w-[460px] rounded-[36px] p-8 md:p-10">
-      <div className="mb-10 flex items-center justify-between">
-        <span className="stat-label text-[13px] tracking-[0.22em]">Living room</span>
-        <span className="flex items-center gap-3 font-mono text-base text-success md:text-lg">
+    <NeuCard hero className="mx-auto w-full max-w-[460px] rounded-[38px] p-7 md:p-9">
+      {/* Brand switcher: the same remote drives either TV. */}
+      <div className="mb-7 flex items-center justify-between gap-3">
+        <div className="neu-seg" role="group" aria-label="TV brand">
+          <span className="neu-seg-item neu-seg-item--active">Samsung</span>
+          <span className="neu-seg-item">LG</span>
+        </div>
+        <span className="mono flex items-center gap-2 text-xs text-success">
           <span className="live-dot" /> Connected
         </span>
       </div>
 
-      {/* D-pad */}
-      <div className="mx-auto grid w-full max-w-[300px] grid-cols-3 gap-4">
-        <div />
-        <Key>▲</Key>
-        <div />
-        <Key>◀</Key>
-        <Key accent className="text-2xl">OK</Key>
-        <Key>▶</Key>
-        <div />
-        <Key>▼</Key>
-        <div />
+      <div className="mb-7 flex items-baseline justify-between">
+        <span className="text-base font-semibold text-textPrimary">Living room</span>
+        <span className="mono text-[11px] text-textSubtle">192.168.1.24</span>
+      </div>
+
+      {/* D-pad, sunk into the body of the remote */}
+      <div className="neu-inset mx-auto rounded-[30px] p-4">
+        <div className="mx-auto grid w-full max-w-[280px] grid-cols-3 gap-3">
+          <div />
+          <Key>▲</Key>
+          <div />
+          <Key>◀</Key>
+          <Key accent className="text-xl">
+            OK
+          </Key>
+          <Key>▶</Key>
+          <div />
+          <Key>▼</Key>
+          <div />
+        </div>
       </div>
 
       {/* Transport */}
-      <div className="mt-8 grid grid-cols-3 gap-4">
+      <div className="mt-6 grid grid-cols-3 gap-3">
         <Key>⏮</Key>
         <Key>⏯</Key>
         <Key>⏭</Key>
       </div>
 
       {/* Volume */}
-      <div className="mt-4 grid grid-cols-3 gap-4">
+      <div className="mt-3 grid grid-cols-3 gap-3">
         <Key>–</Key>
-        <Key>🔇</Key>
+        <Key className="text-base">MUTE</Key>
         <Key>+</Key>
       </div>
-    </GlassCard>
+    </NeuCard>
   );
 }

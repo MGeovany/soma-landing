@@ -4,13 +4,13 @@ import Button from "./Button";
 
 const links = [
   { href: "/#features", label: "Features" },
+  { href: "/#tvs", label: "Samsung & LG" },
   { href: "/support", label: "Support" },
-  { href: "/privacy", label: "Privacy" },
 ];
 
 export default function Nav() {
   return (
-    <header className="glass-header sticky top-0 z-50">
+    <header className="neu-header sticky top-0 z-50">
       <nav className="mx-auto flex h-16 max-w-6xl items-center justify-between px-5">
         <Logo />
         <div className="hidden items-center gap-7 md:flex">
@@ -25,7 +25,7 @@ export default function Nav() {
           ))}
         </div>
         <Button href="/#download" className="btn-store">
-          <img src="/icon.png" alt="" aria-hidden="true" className="h-5 w-5 rounded-[5px]" />
+          <img src="/app-icon.png" alt="" aria-hidden="true" className="h-5 w-5 rounded-[6px]" />
           <span>Get Soma</span>
           <span className="text-sm text-white/80">↗</span>
         </Button>

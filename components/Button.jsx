@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-/** Primary (blue gradient) or ghost (glass) button/link. */
+/** Primary (blue gradient) or ghost (raised neumorphic) button/link. */
 export default function Button({ href, variant = "primary", children, external = false, className = "" }) {
   const cls = `btn ${variant === "primary" ? "btn-primary" : "btn-ghost"} ${className}`;
   if (href) {

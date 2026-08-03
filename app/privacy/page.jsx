@@ -1,5 +1,5 @@
 import PageHeader from "@/components/PageHeader";
-import GlassCard from "@/components/GlassCard";
+import NeuCard from "@/components/NeuCard";
 
 export const metadata = {
   title: "Privacy Policy",
@@ -24,13 +24,13 @@ export default function Privacy() {
       <PageHeader kicker="Legal" title="Privacy Policy" />
 
       <section className="mx-auto max-w-3xl py-14">
-        <GlassCard className="p-7 md:p-10">
+        <NeuCard className="p-7 md:p-10">
           <p className="mono mb-8 text-xs text-textSubtle">Last updated: {UPDATED}</p>
 
           <Section title="Summary">
             <p>
-              Soma is a remote control for Samsung Smart TVs. It talks to your TV directly over your
-              local network. It has <strong className="text-textPrimary">no servers</strong>,
+              Soma is a remote control for Samsung Smart TVs and LG Push-compatible TVs. It talks to
+              your TV directly over your local network. It has <strong className="text-textPrimary">no servers</strong>,
               requires <strong className="text-textPrimary">no account</strong>, and collects{" "}
               <strong className="text-textPrimary">no personal data</strong>. There is nothing to
               sell, share, or leak.
@@ -56,7 +56,7 @@ export default function Privacy() {
           <Section title="Local network access">
             <p>
               Soma communicates with your TV over your local network using Samsung's local
-              WebSocket remote protocol, and (optionally) sends a Wake-on-LAN packet to power the TV
+              WebSocket remote protocol or LG Push, and (optionally) sends a Wake-on-LAN packet to power the TV
               on. macOS and iOS will ask for your permission before Soma can access the local
               network. No data is sent to the internet.
             </p>
@@ -91,7 +91,7 @@ export default function Privacy() {
               .
             </p>
           </Section>
-        </GlassCard>
+        </NeuCard>
       </section>
     </>
   );

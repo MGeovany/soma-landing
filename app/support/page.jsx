@@ -1,4 +1,4 @@
-import GlassCard from "@/components/GlassCard";
+import NeuCard from "@/components/NeuCard";
 import PageHeader from "@/components/PageHeader";
 import Button from "@/components/Button";
 
@@ -19,7 +19,7 @@ const steps = [
 const faqs = [
   {
     q: "Which TVs are supported?",
-    a: "Samsung Smart TVs running Tizen with the local network remote protocol (most models from ~2016 onward). Your device and the TV must be on the same Wi-Fi network.",
+    a: "Samsung Smart TVs running Tizen with the local network remote protocol (most models from ~2016 onward), plus TVs that connect through LG Push. Your device and the TV must be on the same Wi-Fi network.",
   },
   {
     q: "The TV isn't connecting. What should I check?",
@@ -53,28 +53,28 @@ export default function Support() {
         <h2 className="mb-6 text-2xl font-bold text-textPrimary">Getting started</h2>
         <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
           {steps.map((s) => (
-            <GlassCard key={s.n} className="p-5">
+            <NeuCard key={s.n} className="p-5">
               <div className="mono mb-2 text-2xl font-bold" style={{ color: "var(--accent-bright)" }}>
                 {s.n}
               </div>
               <h3 className="mb-1 text-base font-semibold text-textPrimary">{s.title}</h3>
               <p className="text-sm text-textMuted">{s.text}</p>
-            </GlassCard>
+            </NeuCard>
           ))}
         </div>
       </section>
 
       {/* Requirements */}
       <section className="py-6">
-        <GlassCard className="p-6">
+        <NeuCard className="p-6">
           <div className="stat-label mb-3">Requirements</div>
           <ul className="grid gap-2 text-sm text-textMuted sm:grid-cols-2">
-            <li>• Samsung Smart TV (Tizen), ~2016 or newer</li>
+            <li>• Samsung Smart TV (Tizen), ~2016 or newer, or an LG Push-compatible TV</li>
             <li>• Mac (macOS 13+) or iPhone/iPad (iOS 16+)</li>
             <li>• TV and device on the same Wi-Fi network</li>
             <li>• MAC address of the TV for Wake-on-LAN (optional)</li>
           </ul>
-        </GlassCard>
+        </NeuCard>
       </section>
 
       {/* FAQ */}
@@ -82,17 +82,17 @@ export default function Support() {
         <h2 className="mb-6 text-2xl font-bold text-textPrimary">Frequently asked</h2>
         <div className="flex flex-col gap-3">
           {faqs.map((f) => (
-            <GlassCard key={f.q} className="p-5">
+            <NeuCard key={f.q} className="p-5">
               <h3 className="mb-1.5 text-base font-semibold text-textPrimary">{f.q}</h3>
               <p className="text-sm text-textMuted">{f.a}</p>
-            </GlassCard>
+            </NeuCard>
           ))}
         </div>
       </section>
 
       {/* Contact */}
       <section className="py-6">
-        <GlassCard hero className="flex flex-col items-center gap-4 p-8 text-center md:p-12">
+        <NeuCard hero className="flex flex-col items-center gap-4 p-8 text-center md:p-12">
           <div className="stat-label">Still stuck?</div>
           <h2 className="text-2xl font-bold text-textPrimary">We're happy to help</h2>
           <p className="max-w-md text-textMuted">
@@ -101,7 +101,7 @@ export default function Support() {
           <Button href={`mailto:${SUPPORT_EMAIL}`} external>
             {SUPPORT_EMAIL}
           </Button>
-        </GlassCard>
+        </NeuCard>
       </section>
     </>
   );
